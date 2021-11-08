@@ -1,0 +1,139 @@
+table {
+  border: 1px solid #dce8f1;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  line-height: 1.25;
+}
+
+table caption {
+  font-size: 16px;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  background-color: #fff;
+  border: 1px solid #dce8f1;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 20px;
+  text-align: center;
+  word-break: break-word;
+}
+
+table th {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #5fbae9;
+  background-color: #28282b;
+  padding: 1em;
+}
+
+table tr:hover {
+  background-color: #f6f6f6;
+}
+
+@media screen and (max-width: 900px) {
+  table {
+    border: 0;
+    line-height: 1.25;
+    width: inherit;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #dce8f1;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  tr {
+    word-break: break-all;
+  }
+  table td {
+    border-bottom: 1px solid #dce8f1;
+    display: block;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #5fbae9;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  table td .actionsDiv {
+    justify-items: end;
+    column-gap: 0;
+  }
+
+  table tr:hover {
+    background-color: #fff;
+  }
+
+  table td:hover {
+    background-color: #f6f6f6;
+  }
+}
+
+u {
+  text-decoration: none;
+}
+
+.TableBottomDiv {
+  margin-top: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 10px;
+}
+.tableButton {
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 0;
+}
+
+#spanPageSize {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  height: -moz-fit-content;
+  align-self: center;
+}
+
+#pageSize {
+  width: max-content;
+  padding: 5.5px 20px;
+  grid-column: 2;
+}
+
+.actionsDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5px;
+  justify-items: center;
+}

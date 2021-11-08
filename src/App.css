@@ -1,0 +1,13 @@
+html {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+body {
+  background: url("./Images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transform: translatez(0);
+  -webkit-transform: translatez(0);
+}

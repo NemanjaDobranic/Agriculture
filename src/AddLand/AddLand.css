@@ -1,0 +1,56 @@
+#formAddLand {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#formAddLand > div {
+  min-width: 380px;
+}
+
+.addLandSubmit {
+  grid-column: span 2;
+  width: min-content;
+  position: relative;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 20px 0px 30px 0px;
+}
+#GoogleMapFieldSet {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  transition: all 0.5s linear;
+  border-radius: 5px 5px 5px 5px;
+  text-align: left;
+  padding: 8px;
+  max-height: fit-content;
+}
+#GoogleMapFieldSet > input {
+  width: 46%;
+  margin-top: 8px;
+}
+#GoogleMapFieldSet > input:first-child {
+  float: left;
+}
+#GoogleMapFieldSet > input:last-child {
+  float: right;
+}
+
+@media only screen and (max-width: 800px) {
+  #formAddLand {
+    display: block;
+  }
+  .addLandSubmit {
+    display: block;
+  }
+}
+#GoogleMapFieldSet > legend {
+  position: relative;
+  left: 24px;
+}

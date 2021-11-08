@@ -1,0 +1,30 @@
+#usersTable {
+  width: 60%;
+}
+#usersTable thead tr th:first-child,
+#usersTable tbody tr td:first-child {
+  width: 80%;
+}
+#usersTable thead tr th:last-child,
+#usersTable tbody tr td:last-child {
+  width: 20%;
+}
+.thUsers {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  row-gap: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  #usersTable {
+    width: 90%;
+  }
+  #usersTable thead tr th:first-child,
+  #usersTable tbody tr td:first-child {
+    width: auto;
+  }
+  #usersTable thead tr th:last-child,
+  #usersTable tbody tr td:last-child {
+    width: auto;
+  }
+}

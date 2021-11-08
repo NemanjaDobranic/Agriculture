@@ -1,0 +1,21 @@
+#proSavjTable {
+  width: 100%;
+}
+
+#proSavjTable td,
+#proSavjTable th {
+  width: 11%;
+}
+
+@media screen and (max-width: 900px) {
+  #proSavjTable {
+    border: 0;
+    line-height: 1.25;
+    width: 100%;
+  }
+
+  #proSavjTable td,
+  #proSavjTable th {
+    width: auto;
+  }
+}

@@ -1,0 +1,110 @@
+#tableRadio {
+  border: 1px solid #dce8f1;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  line-height: 1.25;
+}
+
+#tableRadio tr {
+  background-color: #fff;
+  border: 1px solid #dce8f1;
+  padding: 0.35em;
+}
+
+#tableRadio th,
+#tableRadio td {
+  padding: 20px;
+  text-align: center;
+  word-break: break-word;
+}
+
+#tableRadio th {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #5fbae9;
+  background-color: #28282b;
+  padding: 1em;
+}
+
+#tableRadio tr:hover {
+  background-color: #f6f6f6;
+}
+
+@media screen and (max-width: 900px) {
+  #tableRadio {
+    border: none;
+    line-height: 1.25;
+  }
+
+  #tableRadio th {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #5fbae9;
+    background-color: #28282b;
+    border-radius: 5px;
+    padding: 8px;
+  }
+
+  #tableRadio thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  #tableRadio tr {
+    border-bottom: 3px solid #dce8f1;
+    display: block;
+    margin-bottom: 0.625em;
+    border: none;
+  }
+  tr {
+    word-break: break-all;
+  }
+  #tableRadio td {
+    border-bottom: 1px solid #dce8f1;
+    display: block;
+    font-size: 16px;
+    padding: 8px;
+    text-align: right;
+  }
+
+  #tableRadio td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #5fbae9;
+  }
+
+  #tableRadio td:hover::before {
+    content: attr(data-hover);
+  }
+
+  #tableRadio td:last-child {
+    border-bottom: 0;
+  }
+
+  #tableRadio td .actionsDiv {
+    justify-items: end;
+    column-gap: 0;
+  }
+
+  #tableRadio tr:hover {
+    background-color: #fff;
+  }
+
+  #tableRadio td:hover {
+    background-color: #f6f6f6;
+  }
+}

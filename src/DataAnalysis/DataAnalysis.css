@@ -1,0 +1,70 @@
+.graphContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: fit-content;
+  width: 46vw;
+  min-width: auto;
+  max-height: fit-content;
+  min-height: auto;
+  position: relative;
+  padding: 8px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 1em;
+}
+.LoadingCircleAnalysis {
+  grid-column: 2;
+}
+
+.divGraphTable {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 1280px) {
+  .divGraphTable {
+    display: block;
+  }
+  .graphContent {
+    width: auto;
+    max-height: fit-content;
+  }
+}
+.divStatSett {
+  margin: 15px 0px 12px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 30px 200px) 1fr;
+  align-items: flex-end;
+}
+.divStatSett > label {
+  text-align: right;
+  color: #5fbae9;
+  font-weight: 400;
+}
+.divStatSett > input[type="datetime-local"],
+.divStatSett > select {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border: 2px solid #f6f6f6;
+  width: auto;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+.divStatSett > select {
+  padding: 4px 3px;
+}

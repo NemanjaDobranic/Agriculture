@@ -1,0 +1,60 @@
+#modalTable #modalTable {
+  border: none;
+  line-height: 1.25;
+}
+
+#modalTable caption {
+  font-size: 16px;
+}
+
+#modalTable thead {
+  border: none;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#modalTable tr {
+  border-bottom: 3px solid #dce8f1;
+  display: block;
+  margin-bottom: 0.625em;
+  border: none;
+}
+tr {
+  word-break: break-all;
+}
+#modalTable td {
+  border-bottom: 1px solid #dce8f1;
+  display: block;
+  font-size: 16px;
+  text-align: right;
+}
+
+#modalTable td::before {
+  content: attr(data-label);
+  float: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #5fbae9;
+}
+
+#modalTable td:last-child {
+  border-bottom: 0;
+}
+
+#modalTable td .actionsDiv {
+  justify-items: end;
+  column-gap: 0;
+}
+
+#modalTable tr:hover {
+  background-color: #fff;
+}
+
+#modalTable td:hover {
+  background-color: #f6f6f6;
+}

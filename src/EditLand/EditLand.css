@@ -1,0 +1,5 @@
+#edit-land {
+  filter: invert(72%) sepia(54%) saturate(1197%) hue-rotate(171deg)
+    brightness(96%) contrast(90%);
+  padding: 8px;
+}

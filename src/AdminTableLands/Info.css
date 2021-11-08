@@ -1,0 +1,10 @@
+#info {
+  filter: invert(72%) sepia(54%) saturate(1197%) hue-rotate(171deg)
+    brightness(96%) contrast(90%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+#info:hover {
+  filter: invert(98%) sepia(65%) saturate(1422%) hue-rotate(297deg)
+    brightness(90%) contrast(86%);
+}

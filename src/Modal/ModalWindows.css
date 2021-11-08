@@ -1,0 +1,70 @@
+#modalDelete,
+#modalCancel,
+#modalConfirm {
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+#modalDelete {
+  background-color: #970c10;
+  -webkit-box-shadow: 0 4px 12px 0 #970c10;
+  box-shadow: 0 4px 12px 0 #970c10;
+}
+#modalCancel {
+  background-color: #7e9dc2;
+  -webkit-box-shadow: 0 4px 12px 0 #7e9dc2;
+  box-shadow: 0 4px 12px 0 #7e9dc2;
+}
+#modalConfirm {
+  background-color: #008000;
+  -webkit-box-shadow: 0 4px 12px 0 #008000;
+  box-shadow: 0 4px 12px 0 #008000;
+}
+#modalDelete:hover {
+  background-color: #ff0f39;
+  cursor: pointer;
+}
+
+#modalCancel:hover {
+  background-color: #bfcad0;
+  cursor: pointer;
+}
+#modalConfirm:hover {
+  background-color: #04d010;
+  -webkit-box-shadow: 0 4px 12px 0 #04d010;
+  box-shadow: 0 4px 12px 0 #04d010;
+}
+
+#modalDelete:active,
+#modalDelete:active {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+#modalFooterBtn {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  padding: 16px;
+}
+
+#modalFooterLine {
+  margin: 0;
+}

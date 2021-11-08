@@ -1,0 +1,10 @@
+#trash {
+  filter: invert(72%) sepia(54%) saturate(1197%) hue-rotate(171deg)
+    brightness(96%) contrast(90%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+#trash:hover {
+  filter: invert(28%) sepia(47%) saturate(3555%) hue-rotate(346deg)
+    brightness(93%) contrast(87%);
+}

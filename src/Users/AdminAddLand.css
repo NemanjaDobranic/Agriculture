@@ -1,0 +1,11 @@
+#addLandAdmin {
+  cursor: pointer;
+  filter: invert(72%) sepia(54%) saturate(1197%) hue-rotate(171deg)
+    brightness(96%) contrast(90%);
+  transition: 0.3s;
+}
+
+#addLandAdmin:hover {
+  filter: invert(77%) sepia(99%) saturate(1955%) hue-rotate(339deg)
+    brightness(101%) contrast(93%);
+}

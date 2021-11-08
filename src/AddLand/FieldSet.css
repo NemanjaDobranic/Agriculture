@@ -1,0 +1,31 @@
+.checkBoxFieldSet {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  transition: all 0.5s linear;
+  border-radius: 5px 5px 5px 5px;
+  text-align: left;
+
+  min-height: 500px;
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+legend {
+  color: #39ace7;
+  font-weight: 450;
+  font-size: 16px;
+  width: 315px;
+}
+.labelCheckBox {
+  display: block;
+  padding: 10px;
+}
